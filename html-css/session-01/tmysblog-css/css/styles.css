@@ -1,0 +1,94 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(2, 2, 32);
+
+}
+
+.pagetitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.pagetitle h1{
+    font-size: 3rem;
+    color: white;
+    /* box-shadow: 10px 20px 15px black;
+    background-image: linear-gradient(blue,red); */
+
+}
+.pagetitle p{
+    color: white;
+}
+
+h1{
+    font-size: 2rem;
+    color: green;
+
+}
+p{
+    font-size: 1rem;
+    color: red;
+}
+.indeximageblock{
+    width: 900px;
+    height: 300px;
+}
+.topnews{
+    margin-top: 20px;
+}
+/* img{
+    width: 500px;
+    height: 300px;
+} */
+
+.menulist{
+    display: flex;
+    list-style-type:none;
+    /* gap: 20px; */
+    justify-content: space-evenly;
+    background-color: black;
+    padding: 0px;
+    /* margin: 40px; */
+    
+
+}
+.menulist a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px;
+}
+
+.menulist a:hover{
+
+    background-color: white;
+    color: blue;
+}
+
+
+/* ul{
+    display: flex;
+    list-style-type:none;
+    /* gap: 20px; 
+    justify-content: space-evenly;
+
+} */
+
+.header img{
+    width: 300px;
+    height: 300px;
+}
