@@ -15,9 +15,9 @@ def mainmenu(self):
     editmenulist(menulist)
     selectmenulist(menulist)
     viewmenulist(menulist)
-    gomenulist(menulist)
-    runmenulist(menulist)
-    terminalmenulist(menulist)
+    # gomenulist(menulist)
+    # runmenulist(menulist)
+    # terminalmenulist(menulist)
     helpmenulist(menulist)
     self.config(menu=menulist)
     

@@ -17,27 +17,28 @@ def filemenulist(self):
     filemenu.add_separator()
 
 
-    filemenu.add_command(label="Save")
-    filemenu.add_command(label="Save As")
-    filemenu.add_command(label="Save All")
+    filemenu.add_command(label="Save",underline=0, accelerator="Ctrl+S")
+    filemenu.add_command(label="Save As",underline=5, accelerator="Ctrl+Shift+S")
+    filemenu.add_command(label="Save All",underline=6)
     filemenu.add_separator()
     sharesubmenu(filemenu)
     filemenu.add_separator()
 
-    filemenu.add_command(label="Auto Save")
+    filemenu.add_command(label="Auto Save",underline=1)
     Preferencessubmenu(filemenu)
     filemenu.add_separator()
 
-    filemenu.add_command(label="Revert File")
-    filemenu.add_command(label="Close Editor")
-    filemenu.add_command(label="Close Folder")
+    filemenu.add_command(label="Revert File",underline=2)
+    filemenu.add_command(label="Close Editor", underline=0, accelerator="Ctrl+W")
+    filemenu.add_command(label="Close Folder",underline=6,accelerator="Ctrl+K F")
+    filemenu.add_command(label="Close Window",underline=4, accelerator="Alt+F4")
     filemenu.add_separator()
-    filemenu.add_command(label="Exit")
+    filemenu.add_command(label="Exit",underline=0, accelerator="Ctrl+Q")
    
 
 def Preferencessubmenu(self):
     Prefsubmenulist=Menu(self, tearoff=0)
-    self.add_cascade(label="Preferences", menu=Prefsubmenulist)
+    self.add_cascade(label="Preferences",underline=0, menu=Prefsubmenulist)
     Prefsubmenulist.add_command(label="Profiles")
     Prefsubmenulist.add_command(label="Settings")
     Prefsubmenulist.add_command(label="Extenstions")
